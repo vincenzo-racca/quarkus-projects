@@ -1,4 +1,4 @@
-package com.vincenzoracca;
+package com.vincenzoracca.quarkus.jpa.reactive.api;
 
 import io.quarkus.test.junit.QuarkusIntegrationTest;
 

@@ -1,4 +1,4 @@
-package com.vincenzoracca;
+package com.vincenzoracca.quarkus.jpa.reactive.api;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -16,14 +16,14 @@ public class UserResourceTest {
 
     ObjectMapper objectMapper = new ObjectMapper();
 
+
     @Test
     public void testHelloEndpoint() throws JsonProcessingException {
-        String response = objectMapper.writeValueAsString(
-                List.of(
-                        new User(1L, "Enzo", "Racca"),
-                        new User(2L, "Beppe", "Antoni")
-                )
+        var users = List.of(
+                new User(1L, "Enzo", "Racca"),
+                new User(2L, "Beppe", "Antoni")
         );
+        String response = objectMapper.writeValueAsString(users);
         given()
           .when().get("/users")
           .then()
