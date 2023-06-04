@@ -1,4 +1,4 @@
-# jpa-reactive
+# quarkus-jpa-reactive
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
