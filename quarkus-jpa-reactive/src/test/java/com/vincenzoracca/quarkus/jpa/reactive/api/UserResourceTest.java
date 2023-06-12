@@ -18,7 +18,7 @@ public class UserResourceTest {
 
 
     @Test
-    public void testHelloEndpoint() throws JsonProcessingException {
+    public void testFindAllEndpoint() throws JsonProcessingException {
         var users = List.of(
                 new User(1L, "Enzo", "Racca"),
                 new User(2L, "Beppe", "Antoni")

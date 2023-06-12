@@ -1,7 +1,8 @@
-package com.vincenzoracca.quarkus.jpa.reactive.service;
+package com.vincenzoracca.quarkus.jpa.reactive.service.impl;
 
 import com.vincenzoracca.quarkus.jpa.reactive.model.User;
 import com.vincenzoracca.quarkus.jpa.reactive.repo.UserRepository;
+import com.vincenzoracca.quarkus.jpa.reactive.service.UserService;
 import io.quarkus.hibernate.reactive.panache.Panache;
 import io.quarkus.hibernate.reactive.panache.common.WithSession;
 import io.smallrye.mutiny.Uni;
