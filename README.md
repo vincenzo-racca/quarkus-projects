@@ -6,3 +6,4 @@ Each application is a Maven module.
 ## List of projects
 
 - [quarkus-jpa-reactive](./quarkus-jpa-reactive/README.md)
+- [quarkus-kafka](./quarkus-kafka/README.md)
