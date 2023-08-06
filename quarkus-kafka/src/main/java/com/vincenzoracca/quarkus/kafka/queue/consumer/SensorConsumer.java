@@ -29,11 +29,11 @@ public class SensorConsumer {
     public void printSensorEvent(SensorEvent message) {
         log.info("Received message: {}", message);
         if(countMessage < MAX_COUNT) {
-            log.info("OK MESSAGE countMessage=" + countMessage);
+            log.info("OK MESSAGE, countMessage=" + countMessage);
             countMessage++;
         }
         else {
-            throw new RuntimeException("MESSAGGIO IN ERRORE countMessage=" + countMessage);
+            throw new RuntimeException("Message failed, countMessage=" + countMessage);
         }
     }
 
