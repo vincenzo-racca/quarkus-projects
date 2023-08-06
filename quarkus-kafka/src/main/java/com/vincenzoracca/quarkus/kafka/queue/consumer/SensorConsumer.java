@@ -11,6 +11,10 @@ import org.slf4j.LoggerFactory;
 
 import java.util.concurrent.CompletionStage;
 
+/**
+ * The consumer simulates an error every 3 sending messages.
+ * It tries to reprocess the failed message with 2 attempts and then it sends the message in DLQ.
+ */
 @ApplicationScoped
 public class SensorConsumer {
 
