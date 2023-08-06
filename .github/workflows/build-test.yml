@@ -16,3 +16,6 @@ jobs:
       - name: Build & Test quarkus-jpa-reactive
         run: mvn --batch-mode --update-snapshots package
         working-directory: quarkus-jpa-reactive
+      - name: Build & Test quarkus-kafka
+        run: mvn --batch-mode --update-snapshots package
+        working-directory: quarkus-kafka

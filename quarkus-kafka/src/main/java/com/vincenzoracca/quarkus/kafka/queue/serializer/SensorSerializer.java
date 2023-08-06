@@ -1,8 +1,8 @@
-package com.vincenzoracca.queue.serializer;
+package com.vincenzoracca.quarkus.kafka.queue.serializer;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.vincenzoracca.model.SensorEvent;
+import com.vincenzoracca.quarkus.kafka.model.SensorEvent;
 import org.apache.kafka.common.serialization.Serializer;
 
 public class SensorSerializer implements Serializer<SensorEvent> {

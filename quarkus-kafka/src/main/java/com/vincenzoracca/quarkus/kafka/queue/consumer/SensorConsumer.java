@@ -1,6 +1,6 @@
-package com.vincenzoracca.queue.consumer;
+package com.vincenzoracca.quarkus.kafka.queue.consumer;
 
-import com.vincenzoracca.model.SensorEvent;
+import com.vincenzoracca.quarkus.kafka.model.SensorEvent;
 import io.smallrye.reactive.messaging.kafka.api.IncomingKafkaRecordMetadata;
 import jakarta.enterprise.context.ApplicationScoped;
 import org.eclipse.microprofile.faulttolerance.Retry;

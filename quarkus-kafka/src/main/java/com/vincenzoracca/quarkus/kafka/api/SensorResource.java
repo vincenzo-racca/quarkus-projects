@@ -1,16 +1,13 @@
-package com.vincenzoracca.api;
+package com.vincenzoracca.quarkus.kafka.api;
 
-import com.vincenzoracca.model.SensorEvent;
-import com.vincenzoracca.queue.producer.SensorProducer;
+import com.vincenzoracca.quarkus.kafka.model.SensorEvent;
+import com.vincenzoracca.quarkus.kafka.queue.producer.SensorProducer;
 import io.smallrye.mutiny.Uni;
-import jakarta.ws.rs.GET;
 import jakarta.ws.rs.POST;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 import org.jboss.resteasy.reactive.RestResponse;
-
-import java.util.concurrent.CompletionStage;
 
 @Path("/sensors")
 public class SensorResource {

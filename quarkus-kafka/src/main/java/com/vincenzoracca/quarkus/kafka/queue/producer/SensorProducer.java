@@ -1,6 +1,6 @@
-package com.vincenzoracca.queue.producer;
+package com.vincenzoracca.quarkus.kafka.queue.producer;
 
-import com.vincenzoracca.model.SensorEvent;
+import com.vincenzoracca.quarkus.kafka.model.SensorEvent;
 import jakarta.enterprise.context.ApplicationScoped;
 import org.eclipse.microprofile.reactive.messaging.Channel;
 import org.eclipse.microprofile.reactive.messaging.Emitter;
